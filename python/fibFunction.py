@@ -9,6 +9,9 @@ fib(4)  # => 3
 
 """
 def fib(num):
+	if n < 0:
+        raise ValueError('Need non-negative int.')
+        
 	if num in [0,1]:
 		return num
 	i = 2
